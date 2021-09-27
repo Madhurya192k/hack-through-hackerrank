@@ -1,0 +1,14 @@
+#include <iostream>
+#include <set>
+#define nd "\n"
+
+int main() {
+    std::string s;
+    std::cin >> s;
+    
+    std::set<char> ch;
+    for(auto &ele : s)
+        ch.insert(ele);
+        
+    std::cout << s.size() - ch.size();
+}
